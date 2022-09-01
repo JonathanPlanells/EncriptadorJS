@@ -3,10 +3,12 @@ body {
     height: 1024px;
     background-color: #F3F5FC;
 }
+
 .logo {
     position: absolute;
     margin: 40px 0 0 84px;
 }
+
 .cajaIlustracion {
 
     display: inline-block;
@@ -17,6 +19,7 @@ body {
     border-radius: 32px;
     overflow: hidden;
 }
+
 .cajaTxt {
     display: inline-block;
     width: 760px;
@@ -25,10 +28,12 @@ body {
     border-radius: 32px;
     overflow: hidden;
 }
+
 .muneco {
     display: flex;
     margin: 243px auto 0 auto;
 }
+
 .cajaIlustracion p {
     display: flex;
     margin: 32px auto;
@@ -41,7 +46,19 @@ body {
     line-height: 120%;
     text-align: center;
     color: #343A40;
+    overflow: hidden;
 }
+
+.cajaIlu2 {
+    background-image: url("Muñeco.svg");
+    width: 336px;
+    height: 781px;
+    margin: 32px 32px 131px 32px;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
 .cajaIlustracion .txt2 {
     width: 336px;
     height: 48px;
@@ -53,6 +70,7 @@ body {
     text-align: center;
     color: #495057;
 }
+
 .cajaIntroducir {
     width: 577px;
     font-family: 'Inter';
@@ -67,11 +85,13 @@ body {
     resize: none;
     outline: none;
 }
+
 .advertencia {
     position: absolute;
     left: 240px;
     top: 851px;
 }
+
 .txtAdvertencia {
     position: absolute;
     top: 851px;
@@ -86,9 +106,10 @@ body {
     color: #495057;
     opacity: 0.8;
 }
+
 .btnEncri {
     position: absolute;
-    top:885px;
+    top: 885px;
     left: 240px;
     flex-direction: row;
     align-items: flex-start;
@@ -116,9 +137,10 @@ body {
     order: 0;
     flex-grow: 1;
 }
+
 .btnDesncri {
     position: absolute;
-    top:885px;
+    top: 885px;
     left: 592px;
     box-sizing: border-box;
     display: flex;
@@ -135,6 +157,7 @@ body {
     order: 1;
     flex-grow: 0;
 }
+
 .btnDesncri p {
     width: 280px;
     height: 19px;
