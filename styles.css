@@ -9,67 +9,12 @@ body {
     margin: 40px 0 0 84px;
 }
 
-.cajaIlustracion {
-
-    display: inline-block;
-    width: 400px;
-    height: 944px;
-    background-color: white;
-    margin: 40px 0 40px 0px;
-    border-radius: 32px;
-    overflow: hidden;
-}
-
 .cajaTxt {
-    display: inline-block;
     width: 760px;
     height: 944px;
     margin: 40px 80px 40px 160px;
     border-radius: 32px;
     overflow: hidden;
-}
-
-.muneco {
-    display: flex;
-    margin: 243px auto 0 auto;
-}
-
-.cajaIlustracion p {
-    display: flex;
-    margin: 32px auto;
-    width: 336px;
-    height: 58px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
-    overflow: hidden;
-}
-
-.cajaIlu2 {
-
-    width: 336px;
-    height: 781px;
-    margin: 32px 32px 131px 32px;
-    resize: none;
-    outline: none;
-    border: none;
-    display: none;
-}
-
-.cajaIlustracion .txt2 {
-    width: 336px;
-    height: 48px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #495057;
 }
 
 .cajaIntroducir {
@@ -124,9 +69,6 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
-}
-
-.btnEncri p {
     flex: none;
     font-family: 'Inter';
     font-style: normal;
@@ -144,7 +86,6 @@ body {
     top: 885px;
     left: 592px;
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -158,15 +99,16 @@ body {
     order: 1;
     flex-grow: 0;
     cursor: pointer;
+
 }
-.btnDesncri:hover, .btnEncri:hover{
+
+.btnDesncri:hover,
+.btnEncri:hover {
     transform: scale(1.02);
     transition: 0.5s all;
 }
 
-.btnDesncri p {
-    width: 280px;
-    height: 19px;
+input[value ="Desencriptar"] {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -178,3 +120,86 @@ body {
     order: 0;
     flex-grow: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+.cajaResultado {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.resultado {
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    resize: none;
+    outline: none;
+    border: none;
+}
+.divMuneco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+.muneco {
+    padding-bottom: 32px;
+}
+
+.txt1 {
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding-bottom: 16px
+}
+
+.txt2 {
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+

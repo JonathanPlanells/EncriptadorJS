@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html lang=”es”>
+
 <head>
     <meta charset=”UTF-8″ />
     <title>Encriptador</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    
+
 </head>
 
 
-<body> 
-    <h1><img src="Vector.svg" class = "logo"></h1>
-   
-    <div class = "cajaTxt">
-        <textarea class ="cajaIntroducir"placeholder="Ingrese el texto aqui" 
-        rows="15"></textarea>
-        <img src="advertencia.svg" class ="advertencia">
-        <p class ="txtAdvertencia">Solo letras minúsculas y sin acentos</p>
-        <button class ="btnEncri"><p>Encriptar</p></button>
-        <button class ="btnDesncri"><p>Desencriptar</p></button>
+<body>
+    <h1><img src="Vector.svg" class="logo"></h1>
 
+    <div class="cajaTxt">
+        <textarea id="txtInicial" class="cajaIntroducir" placeholder="Ingrese el texto aqui" rows="15"></textarea>
+        <img src="advertencia.svg" class="advertencia">
+        <p class="txtAdvertencia">Solo letras minúsculas y sin acentos</p>
+        <input type="button" onclick="btnEnriptador()" class="btnEncri" value="Encriptar">
+        <input type="button" onclick="btnDesenriptador()" class="btnDesncri" value="Desencriptar">
+    </div>
+
+    <div class="cajaResultado">
 
     </div>
-    <div class ="cajaIlustracion">
-        <textarea class = "cajaIlu2"></textarea>
-        <div class="cajaMuneco">
-            <img src="Muñeco.svg" class ="muneco">
-        <p>Ningún mensaje fue encontrado</p>
-        <p class = "txt2">Ingresa el texto que desees encriptar o desencriptar.</p>
+    <textarea id="txtFinal" class="resultado" readonly="readonly"></textarea>
 
-        </div>
-
-       
+    <div class="divMuneco" id="cajaIlu2">
+        <img src="Muñeco.svg" class="muneco">
+        <p class="txt1">Ningún mensaje fue encontrado</p>
+        <p class="txt2">Ingresa el texto que desees encriptar o desencriptar.</p>
 
     </div>
+
 
 </body>
+<script>
+
+    function btnEnriptador() {
+        var x = document.getElementById('cajaIlu2');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+        let cadena = document.getElementById('txtInicial').value;
+        document.getElementById('txtFinal').innerHTML = encriptador(cadena);
+    }
+
+
+    function encriptador(texto) {
+        const caracteres = { "e": "enter", "i": "imes", "a": "ai", "o": "ober", "u": "ufat" }
+        let nueva = texto.replace(/[eiaou]/g, m => caracteres[m])
+        return nueva
+
+    }
+
+    function btnDesenriptador() {
+        var x = document.getElementById('cajaIlu2');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            
+        } else {
+            x.style.display = 'none';
+        }
+        let cadena = document.getElementById('txtInicial').value;
+        document.getElementById('txtFinal').innerHTML = desencriptador(cadena);
+    }
+
+
+    function desencriptador(texto) {
+        const caracteres = { "enter": "e", "imes": "i", "ai": "a", "ober": "o", "ufat": "u" }
+        let nueva = texto.replace(/enter|imes|ai|ober|ufat/g, m => caracteres[m])
+        return nueva
+
+    }
+
+
+
+
+
+
+
+</script>
 
 </html>
