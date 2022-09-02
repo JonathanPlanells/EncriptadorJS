@@ -50,13 +50,14 @@ body {
 }
 
 .cajaIlu2 {
-    background-image: url("Muñeco.svg");
+
     width: 336px;
     height: 781px;
     margin: 32px 32px 131px 32px;
     resize: none;
     outline: none;
     border: none;
+    display: none;
 }
 
 .cajaIlustracion .txt2 {
@@ -156,6 +157,11 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+    cursor: pointer;
+}
+.btnDesncri:hover, .btnEncri:hover{
+    transform: scale(1.02);
+    transition: 0.5s all;
 }
 
 .btnDesncri p {
