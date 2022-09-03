@@ -235,7 +235,6 @@ input[value="Desencriptar"] {
     align-self: stretch;
     flex-grow: 0;
 }
-
 @media screen and (max-width: 991px) {
     
     .logo {
