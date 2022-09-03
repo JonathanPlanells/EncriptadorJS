@@ -12,20 +12,23 @@
 
 
 <body>
-    <h1><img src="Vector.svg" class="logo"></h1>
+    <h1><a href="index.html"><img src="Vector.svg" class="logo"></h1></a>
 
     <div class="cajaTxt">
         <textarea id="txtInicial" class="cajaIntroducir" placeholder="Ingrese el texto aqui" rows="15"></textarea>
-        <img src="advertencia.svg" class="advertencia">
-        <p class="txtAdvertencia">Solo letras minúsculas y sin acentos</p>
-        <input type="button" onclick="btnEnriptador()" class="btnEncri" value="Encriptar">
-        <input type="button" onclick="btnDesenriptador()" class="btnDesncri" value="Desencriptar">
+        <div>
+            <img src="advertencia.svg" class="advertencia">
+            <p class="txtAdvertencia">Solo letras minúsculas y sin acentos</p>
+            <input type="button" onclick="btnEnriptador()" class="btnEncri" value="Encriptar">
+            <input type="button" onclick="btnDesenriptador()" class="btnDesncri" value="Desencriptar">
+        </div>
     </div>
 
     <div class="cajaResultado">
-
+        <textarea id="txtFinal" class="resultado" readonly="readonly"></textarea>
+        <p class="notificacion" id="notificacion"></p>
+        <input type="button" value="Copiar" class="btnCopiar" id="btnCopiar" disabled="true">
     </div>
-    <textarea id="txtFinal" class="resultado" readonly="readonly"></textarea>
 
     <div class="divMuneco" id="cajaIlu2">
         <img src="Muñeco.svg" class="muneco">
@@ -37,11 +40,26 @@
 
 </body>
 <script>
+    copiar();
+    function copiar() {
+        let copiarBtn = document.getElementById('btnCopiar');
+        let textarea = document.getElementById('txtFinal');
+        let pop = document.getElementById('notificacion');
+        copiarBtn.addEventListener("click", () => {
+            pop.innerHTML = ``
+            textarea.select();
+            document.execCommand("copy");
+            pop.innerHTML += `!Texto Copiado!`
+        })
+    }
 
     function btnEnriptador() {
-        var x = document.getElementById('cajaIlu2');
+        let pop = document.getElementById('notificacion');
+        pop.innerHTML = ``
+        document.getElementById("btnCopiar").disabled = false;
+        let x = document.getElementById('cajaIlu2');
         if (x.style.display === 'none') {
-            x.style.display = 'block';
+            x.style.visibility = 'block';
         } else {
             x.style.display = 'none';
         }
@@ -49,19 +67,19 @@
         document.getElementById('txtFinal').innerHTML = encriptador(cadena);
     }
 
-
     function encriptador(texto) {
         const caracteres = { "e": "enter", "i": "imes", "a": "ai", "o": "ober", "u": "ufat" }
         let nueva = texto.replace(/[eiaou]/g, m => caracteres[m])
         return nueva
-
     }
 
     function btnDesenriptador() {
-        var x = document.getElementById('cajaIlu2');
+        let pop = document.getElementById('notificacion');
+        pop.innerHTML = ``
+        let x = document.getElementById('cajaIlu2');
         if (x.style.display === 'none') {
-            x.style.display = 'block';
-            
+            x.style.visibility = 'hidden';
+
         } else {
             x.style.display = 'none';
         }
@@ -69,19 +87,11 @@
         document.getElementById('txtFinal').innerHTML = desencriptador(cadena);
     }
 
-
     function desencriptador(texto) {
         const caracteres = { "enter": "e", "imes": "i", "ai": "a", "ober": "o", "ufat": "u" }
         let nueva = texto.replace(/enter|imes|ai|ober|ufat/g, m => caracteres[m])
         return nueva
-
     }
-
-
-
-
-
-
 
 </script>
 

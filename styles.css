@@ -145,8 +145,8 @@ input[value ="Desencriptar"] {
     position: absolute;
     width: 336px;
     height: 781px;
-    left: 1032px;
-    top: 72px;
+    left: 35px;
+    top:70px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -157,6 +157,42 @@ input[value ="Desencriptar"] {
     outline: none;
     border: none;
 }
+.notificacion{
+    position: absolute;
+    left: 140px;
+    top: 30px;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #0A3871;
+
+}
+.btnCopiar{
+    width: 328px;
+    height: 67px;
+    position: absolute;
+    left: 35px;
+    top: 840px;
+    border: 1px solid #0A3871;
+    background-color:#0A3871;
+    color: white;
+    border-radius: 24px;
+    flex: none;
+    font-size: 16px;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+
+}
+.btnCopiar:disabled{
+    background-color:#ced7e0;
+    border: 1px solid #c0dafb;
+    cursor:initial;
+}
+
 .divMuneco {
     position: absolute;
     width: 336px;
