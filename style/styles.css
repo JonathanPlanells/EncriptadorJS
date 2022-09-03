@@ -3,10 +3,12 @@ body {
     height: 1024px;
     background-color: #F3F5FC;
 }
+
 .logo {
     position: absolute;
     margin: 40px 0 0 84px;
 }
+
 .cajaTxt {
     width: 760px;
     height: 944px;
@@ -14,6 +16,7 @@ body {
     border-radius: 32px;
     overflow: hidden;
 }
+
 .cajaIntroducir {
     width: 577px;
     font-family: 'Inter';
@@ -28,11 +31,13 @@ body {
     resize: none;
     outline: none;
 }
+
 .advertencia {
     position: absolute;
     left: 240px;
     top: 851px;
 }
+
 .txtAdvertencia {
     position: absolute;
     top: 851px;
@@ -47,6 +52,7 @@ body {
     color: #495057;
     opacity: 0.8;
 }
+
 .btnEncri {
     position: absolute;
     top: 885px;
@@ -74,6 +80,7 @@ body {
     order: 0;
     flex-grow: 1;
 }
+
 .btnDesncri {
     position: absolute;
     top: 885px;
@@ -94,12 +101,14 @@ body {
     cursor: pointer;
 
 }
+
 .btnDesncri:hover,
 .btnEncri:hover {
     transform: scale(1.02);
     transition: 0.5s all;
 }
-input[value ="Desencriptar"] {
+
+input[value="Desencriptar"] {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -122,12 +131,13 @@ input[value ="Desencriptar"] {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+
 .resultado {
     position: absolute;
     width: 336px;
     height: 781px;
     left: 35px;
-    top:70px;
+    top: 70px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -138,7 +148,8 @@ input[value ="Desencriptar"] {
     outline: none;
     border: none;
 }
-.notificacion{
+
+.notificacion {
     position: absolute;
     left: 135px;
     top: 30px;
@@ -151,14 +162,15 @@ input[value ="Desencriptar"] {
     color: #0A3871;
 
 }
-.btnCopiar{
+
+.btnCopiar {
     width: 328px;
     height: 67px;
     position: absolute;
     left: 35px;
     top: 840px;
     border: 1px solid #0A3871;
-    background-color:#0A3871;
+    background-color: #0A3871;
     color: white;
     border-radius: 24px;
     flex: none;
@@ -168,11 +180,13 @@ input[value ="Desencriptar"] {
     cursor: pointer;
 
 }
-.btnCopiar:disabled{
-    background-color:#ced7e0;
+
+.btnCopiar:disabled {
+    background-color: #ced7e0;
     border: 1px solid #c0dafb;
-    cursor:initial;
+    cursor: initial;
 }
+
 .divMuneco {
     position: absolute;
     width: 336px;
@@ -180,9 +194,11 @@ input[value ="Desencriptar"] {
     left: 1032px;
     top: 283px;
 }
+
 .muneco {
     padding-bottom: 32px;
 }
+
 .txt1 {
     width: 336px;
     height: 58px;
@@ -199,6 +215,7 @@ input[value ="Desencriptar"] {
     flex-grow: 0;
     padding-bottom: 16px
 }
+
 .txt2 {
     width: 336px;
     height: 48px;
@@ -215,4 +232,26 @@ input[value ="Desencriptar"] {
     flex-grow: 0;
 }
 
+@media screen and (max-width: 770px) {
+    body {
+        position: relative;
+        width: 768px;
+        height: 1174px;
+    }
 
+    .logo {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 6.25%;
+        bottom: 89.8%;
+    }
+
+    .cajaTxt {
+        position: absolute;
+        width: 688px;
+        height: 48px;
+        left: 40px;
+        top: 240px;
+    }
+}
