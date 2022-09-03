@@ -241,17 +241,96 @@ input[value="Desencriptar"] {
 
     .logo {
         position: absolute;
-        left: 5.21%;
-        right: 90.74%;
-        top: 6.25%;
-        bottom: 89.8%;
+        left: -40px;
+        top: 0px;
+
     }
 
     .cajaTxt {
         position: absolute;
+        top: 10px;
+        left: -200px;
+    }
+
+    .btnEncri {
+        position: absolute;
+        top: 710px;
+        left: 80px;
+    }
+
+    .btnDesncri {
+        position: absolute;
+        top: 710px;
+        left: 430px;
+    }
+
+    .advertencia {
+        position: absolute;
+        top: 670px;
+        left: 80px;
+    }
+
+    .txtAdvertencia {
+        position: absolute;
+        top: 670px;
+        left: 110px;
+    }
+
+    .cajaResultado {
+        position: absolute;
         width: 688px;
-        height: 48px;
+        height: 133px;
         left: 40px;
-        top: 240px;
+        top: 850px;
+        overflow: hidden;
+    }
+
+    .resultado {
+        top: 40px
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .btnCopiar {
+        position: fixed;
+        top: 30px;
+        left: 400px;
+    }
+
+    .notificacion {
+        position: absolute;
+        top: 10px;
+        left: 500px;
+    }
+
+    .txt1 {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 624px;
+        height: 29px;
+        flex: none;
+
+    }
+
+    .txt2 {
+        position: absolute;
+        width: 624px;
+        height: 24px;
+        top: 70px;
+        left: 40px;
+
+    }
+
+    .divMuneco {
+        position: absolute;
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 850px;
+        overflow: hidden;
+
     }
 }
