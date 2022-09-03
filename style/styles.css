@@ -276,7 +276,7 @@ input[value="Desencriptar"] {
         width: 90%;
         max-height: 430px;
         top: 0px;
-        margin: 780px 0 0 -960px;
+        margin: 780px 0 0 -950px;
         overflow: hidden;
         padding-bottom:  30px;
     }
@@ -335,14 +335,50 @@ input[value="Desencriptar"] {
         top: 0px;
         margin: 780px 0 0 -1000px;
         overflow: hidden;
-        
     }
 
     
 }
+@media screen and (max-width: 800px){
+    .logo{
+        scale: 70%;
+        top:-10px
+    }
+    .cajaIntroducir{
+        height: 40%;
+        top:-40px;
+        
+    }
+    .btnEncri {
+        margin: -440px auto;
+        left: 10.5%;
+    }
+    .btnDesncri {
+        margin: -440px auto;
+    }
+    .advertencia {
+        top: 400px;
+    }
+    .txtAdvertencia {
+        top: 399px;
+    }
+    .cajaResultado {
+        display: flex;
+        width: 90%;
+        max-height: 430px;
+        top: 0px;
+        margin: 610px 0 0 -960px;
+        overflow: hidden;
+        padding-bottom:  30px;
+    }
+    .notificacion{
+        margin: -10px auto auto 58%;
+    }
+
+}
 @media screen and (max-width: 768px) {
     .logo{
-        scale: 80%;
+        scale: 70%;
     }
     .cajaIntroducir{
         position: absolute;
@@ -388,7 +424,8 @@ input[value="Desencriptar"] {
     }
     .muneco2{
         scale: 130%;
-        margin: 160px auto;
+        margin: 160px auto -90px;
+        
     }
         
 
@@ -488,8 +525,7 @@ input[value="Desencriptar"] {
     }
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 390px) {
     .logo {
         position: absolute;
         left: -60px;
@@ -565,7 +601,6 @@ input[value="Desencriptar"] {
         border-radius: 15px;
         text-align: center;
     }
-
     .btnDesncri {
         position: absolute;
         width: 40%;
