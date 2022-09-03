@@ -61,11 +61,3 @@ function desencriptador(texto) {
     return nueva
 }
 
-  
-let area2 = document.querySelectorAll(".resultado")
-        
-window.addEventListener("DOMContentLoaded", () => {
-  area2.forEach((elemento) => {
-    elemento.style.height = `${elemento.scrollHeight}px`
-  })
-})   

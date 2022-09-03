@@ -7,6 +7,7 @@ body {
 .logo {
     position: absolute;
     margin: 40px 0 0 84px;
+    z-index: 10;
 }
 
 .cajaTxt {
@@ -285,10 +286,11 @@ input[value="Desencriptar"] {
     .cajaResultado {
         position: absolute;
         width: 688px;
-        max-height: 300px;
+        max-height: 330px;
         left: 40px;
         top: 850px;
         overflow: hidden;
+        padding-bottom:  30px;
     }
 
     .muneco {
@@ -299,14 +301,16 @@ input[value="Desencriptar"] {
     }
 
     .btnCopiar {
-        position: fixed;
-        top: 30px;
-        left: 400px;
+        position: absolute;
+        scale: 80%;
+        top: 270px;
+        left:190px;
+        border-radius:15px;
     }
 
     .notificacion {
         position: absolute;
-        top: 20px;
+        top: 15px;
         left: 500px;
         font-style: normal;
         font-weight: 100;
@@ -325,14 +329,14 @@ input[value="Desencriptar"] {
         position: absolute;
         width: 624px;
         height: 24px;
-        top: 70px;
+        top: 65px;
         left: 40px;
     }
 
     .divMuneco {
         position: absolute;
         width: 688px;
-        height: 533px;
+        height: 400px;
         left: 40px;
         top: 850px;
         overflow: hidden;
