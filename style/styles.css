@@ -237,9 +237,10 @@ input[value="Desencriptar"] {
         width: 43%;
         height: 9%;
         margin: -280px auto;
-        left: 8.5%;
+        left: 10%;
         border-radius: 20px;
         text-align: center;
+        border: none;
     }
     .btnDesncri {
         position: absolute;
@@ -369,12 +370,12 @@ input[value="Desencriptar"] {
         height: 40%;
     }
     .btnEncri{
-        left: 12%;
-        width: 42%;
+        left: 15%;
+        width: 40%;
         margin: -500px auto;
     }
     .btnDesncri {
-        width: 42%;
+        width: 40%;
         left: 57%;
         margin: -500px auto;
     }
