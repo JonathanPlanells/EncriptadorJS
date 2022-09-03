@@ -93,10 +93,8 @@ body {
     order: 1;
     flex-grow: 0;
     cursor: pointer;
-
 }
-.btnDesncri:hover,
-.btnEncri:hover {
+.btnDesncri:hover, .btnEncri:hover {
     transform: scale(1.02);
     transition: 0.5s all;
 }
@@ -164,16 +162,13 @@ input[value="Desencriptar"] {
     order: 1;
     flex-grow: 0;
     cursor: pointer;
-
 }
-
 .btnCopiar:disabled {
     background-color:transparent;
     border: 1px solid transparent;
     cursor: initial;
     color: transparent;
 }
-
 .divMuneco {
     position: absolute;
     width: 336px;
@@ -219,7 +214,6 @@ input[value="Desencriptar"] {
     flex-grow: 0;
 }
 @media screen and (max-width: 1024px) {
-    
     .logo {
         position: absolute;
         left: -40px;
@@ -232,14 +226,12 @@ input[value="Desencriptar"] {
         left: -200px;
         height: 70%;
     }
-
     .cajaIntroducir {
         position: absolute;
         width: 90%;
         height: 55%;
         font-size: 25px;
     }
-
     .btnEncri {
         position: absolute;
         width: 43%;
@@ -249,7 +241,6 @@ input[value="Desencriptar"] {
         border-radius: 20px;
         text-align: center;
     }
-
     .btnDesncri {
         position: absolute;
         width: 43%;
@@ -259,7 +250,6 @@ input[value="Desencriptar"] {
         border-radius: 20px;
         text-align: center;
     }
-
     .advertencia {
         position: absolute;
         top: 562px;
@@ -287,7 +277,6 @@ input[value="Desencriptar"] {
         top: 55px;
         left: 30px;
     }
-
     .btnCopiar {
         position: absolute;
         max-width: 30%;
@@ -296,7 +285,6 @@ input[value="Desencriptar"] {
         border-radius: 15px;
         text-align: center;
     }
-
     .notificacion {
         display: flex;
         margin: -10px auto auto 66%;
@@ -309,7 +297,6 @@ input[value="Desencriptar"] {
         margin: 40px auto;
         justify-content: center;
     }
-
     .txt2 {
         position: absolute;
         width: 100%;
@@ -327,7 +314,6 @@ input[value="Desencriptar"] {
         margin: 115px auto;
         left: 30%;
     }
-
     .divMuneco {
         display: flex;
         width: 90%;
@@ -336,8 +322,6 @@ input[value="Desencriptar"] {
         margin: 780px 0 0 -1000px;
         overflow: hidden;
     }
-
-    
 }
 @media screen and (max-width: 800px){
     .logo{
@@ -346,8 +330,7 @@ input[value="Desencriptar"] {
     }
     .cajaIntroducir{
         height: 40%;
-        top:-40px;
-        
+        top:-40px;  
     }
     .btnEncri {
         margin: -440px auto;
@@ -374,7 +357,6 @@ input[value="Desencriptar"] {
     .notificacion{
         margin: -10px auto auto 58%;
     }
-
 }
 @media screen and (max-width: 768px) {
     .logo{
@@ -401,13 +383,11 @@ input[value="Desencriptar"] {
         top: 355px;
         left: 100px;
     }
-
     .txtAdvertencia {
         scale: 120%;
         position: absolute;
         top: 353px;
-        left: 145px;
-        
+        left: 145px;    
     }
     .cajaResultado {
         margin: 530px 0 0 -960px;
@@ -424,13 +404,9 @@ input[value="Desencriptar"] {
     }
     .muneco2{
         scale: 130%;
-        margin: 160px auto -90px;
-        
-    }
-        
-
+        margin: 160px auto -90px;   
+    }    
 }
-
 @media screen and (max-width: 480px) {   
     .divMuneco{
         display: flex;
@@ -524,7 +500,6 @@ input[value="Desencriptar"] {
         left: 130px;
     }
 }
-
 @media screen and (max-width: 390px) {
     .logo {
         position: absolute;
