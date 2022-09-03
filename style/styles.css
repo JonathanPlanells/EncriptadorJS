@@ -553,10 +553,10 @@ input[value="Desencriptar"] {
 
     .cajaTxt {
         position: absolute;
-        width: 100%;
+        width: 105%;
         top: -40px;
         left: -200px;
-        height: 60%;
+        height: 70%;
         border-radius: 0;
     }
     .cajaIntroducir{
@@ -569,20 +569,21 @@ input[value="Desencriptar"] {
     }
     .btnEncri {
         position: absolute;
-        width: 40%;
-        height: 15%;
+        width: 39%;
+        height: 13%;
         margin: -560px auto;
-        left: 16%;
-        border-radius: 15px;
+        left: 18%;
+        border-radius: 10px;
         text-align: center;
+        border: none;
     }
     .btnDesncri {
         position: absolute;
-        width: 40%;
-        height: 15%;
+        width: 39%;
+        height: 13%;
         margin: -560px auto;
-        left: 60%;
-        border-radius: 15px;
+        left: 59%;
+        border-radius: 10px;
         text-align: center;
     }
     .advertencia {
