@@ -247,7 +247,7 @@ input[value="Desencriptar"] {
         width: 100%;
         top: 10px;
         left: -200px;
-        height: 60%;
+        height: 70%;
     }
 
     .cajaIntroducir {
@@ -363,4 +363,30 @@ input[value="Desencriptar"] {
     }
 
     
+}
+@media screen and (max-width: 748px) 
+{
+    .cajaIntroducir{
+        position: absolute;
+        height: 30%;
+    }
+    .btnEncri{
+        position: absolute;
+        width: 43%;
+        height: 9%;
+        margin: -150px auto;
+        left: 55%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .btnDesncri {
+        position: absolute;
+        width: 43%;
+        height: 9%;
+        margin: -250px auto;
+        left: 55%;
+        border-radius: 20px;
+        text-align: center;
+        
+    }
 }
