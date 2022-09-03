@@ -60,3 +60,12 @@ function desencriptador(texto) {
     let nueva = texto.replace(/enter|imes|ai|ober|ufat/g, m => caracteres[m])
     return nueva
 }
+
+  
+let area2 = document.querySelectorAll(".resultado")
+        
+window.addEventListener("DOMContentLoaded", () => {
+  area2.forEach((elemento) => {
+    elemento.style.height = `${elemento.scrollHeight}px`
+  })
+})   
