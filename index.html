@@ -6,7 +6,7 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet"media="only screen and (max-width: 768px)" href="style/styles.css">
+    <link rel="stylesheet" media="only screen and (max-width: 1030px)" href="style/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
@@ -21,11 +21,13 @@
         <div>
             <img src="image/advertencia.svg" class="advertencia">
             <p class="txtAdvertencia">Solo letras minúsculas y sin acentos</p>
-            <input type="button" onclick="btnEnriptador()" class="btnEncri" value="Encriptar">
-            <input type="button" onclick="btnDesenriptador()" class="btnDesncri" value="Desencriptar">
+            <div><input type="button" onclick="btnEnriptador()" class="btnEncri" value="Encriptar">
+                <input type="button" onclick="btnDesenriptador()" class="btnDesncri" value="Desencriptar">
+            </div>
+
         </div>
     </div>
-    
+
     <div class="cajaResultado">
         <textarea id="txtFinal" class="resultado" readonly="readonly"></textarea>
         <p class="notificacion" id="notificacion"></p>
@@ -36,10 +38,12 @@
         <img src="image/Muñeco.svg" class="muneco">
         <p class="txt1">Ningún mensaje fue encontrado</p>
         <p class="txt2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <img src="image/Muñeco.svg" class="muneco2">
 
     </div>
 
 
 </body>
 <script src="script.js"></script>
+
 </html>
